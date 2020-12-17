@@ -12,7 +12,7 @@ router.get('/detail', indexController.detail);
 /* GET callback page */
 router.get('/callback', indexController.callback);
 
-/* GET nnotificaciones page */
+/* GET notificaciones page */
 router.post('/notif', indexController.notif);
 
 /* POST buy page */

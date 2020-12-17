@@ -28,6 +28,7 @@ module.exports = {
         }
     },
     notif: (req,res)=>{
+        console.log('webhook',req.body);
         res.status(200).end('ok');
     },
     buy: (req,res) => {

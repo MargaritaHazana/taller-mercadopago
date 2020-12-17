@@ -68,12 +68,12 @@ module.exports = {
             },
             external_reference: 'margaritahazana@gmail.com',
             back_urls: {
-                success: 'http://localhost:3000/callback?status=success',
-                pending: 'http://localhost:3000/callback?status=pending',
-                failure: 'http://localhost:3000/callback?status=failure'
+                success: 'https://mercadopago-taller.herokuapp.com/callback?status=success',
+                pending: 'https://mercadopago-taller.herokuapp.com/callback?status=pending',
+                failure: 'https://mercadopago-taller.herokuapp.com/callback?status=failure'
             },
             auto_return: 'approved',
-            notification_url: 'http://localhost:3000/notif'
+            notification_url: 'https://mercadopago-taller.herokuapp.com/notif'
         }
         mercadopago.preferences.create(preference)
             .then(response =>{

@@ -73,7 +73,7 @@ module.exports = {
                 failure: 'http://localhost:3000/callback?status=failure'
             },
             auto_return: 'approved',
-            notification_url: 
+            notification_url: 'http://localhost:3000/notif'
         }
         mercadopago.preferences.create(preference)
             .then(response =>{

@@ -36,14 +36,15 @@ module.exports = {
         res.status(200).end('ok');
     },
     buy: (req,res) => {
+        console.log(req.body);
         let preference = {
             items: [
                 {
                     id: '1234',
-                    title: 'Product Name',
+                    title: req.body.title,
                     description: 'Dispositivo móvil de Tienda e-commerce',
-                    picture_url: 'https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.muycomputerpro.com%2Fwp-content%2Fuploads%2F2014%2F01%2Faplicaciones-moviles.jpg&imgrefurl=https%3A%2F%2Fwww.muycomputerpro.com%2F2014%2F01%2F15%2Fingresos-dispositivos-moviles&tbnid=o9Z-bSNtW22kuM&vet=12ahUKEwi3_OmoodbtAhXlB9QKHb0HA0YQMygAegUIARCrAQ..i&docid=U0zlClllyNsm-M&w=630&h=473&q=dispositivo%20movil&ved=2ahUKEwi3_OmoodbtAhXlB9QKHb0HA0YQMygAegUIARCrAQ',
-                    unit_price: 10,
+                    picture_url: req.body.img,
+                    unit_price: Number(req.body.price),
                     quantity: 1
                 }
             ],

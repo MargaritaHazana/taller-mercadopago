@@ -42,7 +42,9 @@
 						<div class="mercadopago-button-container">
 							<form action="/buy" method="post">
 								<!-- Esto debería estar cuando tengo db para buscar el producto -->
-								<!-- <input type="hidden" name="product_id"> -->
+								<input type="hidden" name="title" value="<%= title %> ">
+								<input type="hidden" name="price" value="<%= price %> ">
+								<input type="hidden" name="img" value="<%= img %> ">
 								<button class="mercadopago-button">
 									Pagar la compra
 								</button>
